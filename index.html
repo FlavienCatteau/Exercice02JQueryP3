@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <form class="" action="index.html" method="post">
+            <label for="lastName"></label><input type="text" name="lastName" id="count" value="0" />
+            <button type="button" class="clickPlus" name="button">+</button>
+            <button type="button" class="clickMoins" name="button">-</button>
+        </form>
+        <script src="assets\js\jquery-3.3.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                var valeur = 0;
+                $('.clickPlus').click(function(){
+                    valeur++;
+                    $('#count').val(valeur);
+                })
+                $('.clickMoins').click(function(){
+                    valeur--;
+                    $('#count').val(valeur);
+                })
+            })
+        </script>
+    </body>
+</html>
